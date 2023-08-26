@@ -1,0 +1,12 @@
+#!/bin/sh
+# this doesn't *have* to be run directly, although you absolutely can.
+# make is the cleanest way to do that though.
+
+# ensure we have the dependencies
+which curl >/dev/null 2>&1 || (echo 'curl not found' && echo "$0 failed" && exit 1)
+
+# get redbean binary
+curl https://redbean.dev/redbean-2.2.com >redbean.com
+chmod +x redbean.com
+
+echo 'configuring done, you may run `make redbean` now.'

@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# please note that this is not hardened (yet.) redbean provides us with many hardening
+# features which we're not taking advantage of yet.
+#
+
+./redbean.com -s
