@@ -8,7 +8,7 @@ all:
 	@echo "  prod - runs redbean in production mode"
 
 configure:
-	@./configure
+	@bin/configure
 
 redbean.com:
 	@$(MAKE) configure
